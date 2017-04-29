@@ -4,3 +4,8 @@ body {
   margin-top: 60px;
   margin-bottom: 60px;
 }
+
+html {
+  position: relative;
+  min-height: 100%;
+}
