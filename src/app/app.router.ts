@@ -1,14 +1,14 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
 
 export const router: Routes = [
-    { path: '', redirectTo: 'footer', pathMatch: 'full' },
-    { path: 'footer', component: FooterComponent },
-    { path: 'header', component: HeaderComponent },
-    { path: '**', redirectTo: 'footer' }
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'home', component: HomeComponent },
+    { path: 'contact', component: ContactComponent },
+    { path: '**', redirectTo: 'home' }
 ];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);
